@@ -1,0 +1,31 @@
+[project]
+name = "japanese-ai-tutor"
+version = "0.1.0"
+description = "An AI-powered Japanese language tutor for English speakers, built with Streamlit."
+readme = "README.md"
+requires-python = ">=3.11"
+# Runtime dependencies are listed in requirements.txt (the file hosting platforms read).
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "live: calls the real OpenAI API; runs only when RUN_LIVE_TESTS=1 (costs money)",
+]
+filterwarnings = ["error::pydantic.warnings.PydanticDeprecatedSince20"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "SIM", "RUF"]
+ignore = [
+    "RUF001",  # Japanese/full-width characters in strings are intentional
+    "RUF002",
+    "RUF003",
+    "S311",    # random is used only to shuffle quiz options, never for security
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "S105", "S106"]  # assert and fake secrets are fine in tests
+"ui/styles.py" = ["E501"]  # CSS rules read best on one line

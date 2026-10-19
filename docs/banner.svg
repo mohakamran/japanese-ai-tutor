@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="Japanese AI Tutor — learn Japanese with an AI tutor that explains why">
+  <defs>
+    <pattern id="waves" width="48" height="24" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#C8372D" stroke-opacity="0.13" stroke-width="1.2">
+        <path d="M0 24a24 24 0 0 1 48 0"/><path d="M6 24a18 18 0 0 1 36 0"/>
+        <path d="M12 24a12 12 0 0 1 24 0"/><path d="M18 24a6 6 0 0 1 12 0"/>
+        <path d="M-24 12a24 24 0 0 1 48 0"/><path d="M24 12a24 24 0 0 1 48 0"/>
+      </g>
+    </pattern>
+    <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0.35" stop-color="#FBF8F3" stop-opacity="1"/>
+      <stop offset="0.75" stop-color="#FBF8F3" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.38" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#E2574C"/><stop offset="0.6" stop-color="#C8372D"/><stop offset="1" stop-color="#A12A22"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="360" rx="24" fill="#FBF8F3"/>
+  <rect width="1280" height="360" rx="24" fill="url(#waves)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#fade)"/>
+  <circle cx="1060" cy="180" r="118" fill="url(#sun)"/>
+  <text x="1060" y="222" text-anchor="middle" font-family="Hiragino Mincho ProN, Yu Mincho, Noto Serif JP, serif" font-size="120" font-weight="900" fill="#FFFFFF">語</text>
+  <text x="72" y="110" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="22" font-weight="700" fill="#C8372D" letter-spacing="4">日本語 · AI SENSEI</text>
+  <text x="72" y="182" font-family="Helvetica Neue, Arial, sans-serif" font-size="64" font-weight="800" fill="#1C1E26">Japanese AI Tutor</text>
+  <text x="72" y="236" font-family="Helvetica Neue, Arial, sans-serif" font-size="26" fill="#5A606B">Learn Japanese with an AI tutor that <tspan fill="#C8372D" font-weight="700">explains why.</tspan></text>
+  <text x="72" y="290" font-family="Helvetica Neue, Arial, sans-serif" font-size="19" fill="#5A606B">Vocabulary · Grammar · Quizzes · Sentence correction · Conversation · Progress tracking</text>
+</svg>

@@ -1,0 +1,32 @@
+[theme]
+base = "light"
+primaryColor = "#C8372D"            # shu-iro (vermilion)
+backgroundColor = "#FBF8F3"         # washi paper
+secondaryBackgroundColor = "#F3EDE4"
+textColor = "#1C1E26"               # sumi ink
+linkColor = "#2E4A7D"               # ai-iro (indigo)
+borderColor = "#E6DDD0"
+showWidgetBorder = true
+baseRadius = "0.75rem"
+buttonRadius = "0.7rem"
+font = "Plus Jakarta Sans:https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+headingFont = "Plus Jakarta Sans:https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+headingFontWeights = [800, 700, 700, 600, 600, 600]
+metricValueFontWeight = 700
+chartCategoricalColors = ["#2E4A7D", "#C8372D", "#B8873B", "#4F7A5B"]
+
+[theme.sidebar]
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F7F2EA"
+borderColor = "#EDE5D8"
+
+[client]
+# Never show tracebacks or exception details in the browser; they go to the server log.
+showErrorDetails = "none"
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+enableStaticServing = false
